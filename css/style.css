@@ -1643,7 +1643,6 @@ fieldset[disabled] .s-btn {
   position: relative;
   z-index: 1000;
   min-height: 3.125rem;
-  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.3);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -1913,7 +1912,7 @@ fieldset[disabled] .s-btn {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
-.s-header-v2__nav-link:hover {
+.s-header-v2__nav-link:hover, .s-header-v2__nav-link.active {
   color: #fff;
 }
 
@@ -2373,4 +2372,17 @@ fieldset[disabled] .s-btn {
 
 .s-swiper__pagination-v1--dark .swiper-pagination-bullet-active {
   background: crimson;
+}
+
+.phone, .email, .address{
+  display: flex;
+  align-items: center;
+}
+.phone{
+  justify-content: center;
+}
+
+.contact h4, .contact h2 {
+  font-family: Lato, sans-serif;
+  text-transform: none;
 }
